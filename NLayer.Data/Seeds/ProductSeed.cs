@@ -42,7 +42,7 @@ namespace NLayer.Data.Seeds
             },
         new Product
         {
-            Id = 1,
+            Id = 4,
             CategoryId = 2,
             Price = 300,
             Stock = 20,
@@ -51,7 +51,7 @@ namespace NLayer.Data.Seeds
         },
            new Product
            {
-               Id = 2,
+               Id = 5,
                CategoryId = 2,
                Price = 200,
                Stock = 20,
