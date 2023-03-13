@@ -20,10 +20,10 @@ namespace NLayer.Data
         public DbSet<Category> Categories { get; set; }
 
         public DbSet<Product> Products { get; set; }
-        public DbSet<ProductFeature> productFeatures { get; set; }
+        public DbSet<ProductFeature> ProductFeatures { get; set; }
         // public DbSet<ProductFeature> productFeatures { get; set; } //Product üzerinden ekleme yapılabilir. 
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        protected override void OnModelCreating(ModelBuilder modelBuilder) 
         {
 
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
