@@ -21,7 +21,7 @@ namespace NLayer.Data
 
         public DbSet<Product> Products { get; set; }
         public DbSet<ProductFeature> ProductFeatures { get; set; }
-        public DbSet<ProductFeature> productFeatures { get; set; } //Product üzerinden ekleme yapılabilir. 
+      
 
         protected override void OnModelCreating(ModelBuilder modelBuilder) 
         {
