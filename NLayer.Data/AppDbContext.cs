@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using NLayer.Core;
+using NLayer.Core.Models;
 using NLayer.Data.Configurations;
 using System;
 using System.Collections.Generic;
@@ -26,7 +26,7 @@ namespace NLayer.Data
 
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
 
-            modelBuilder.ApplyConfiguration(new ProductConfiguration()); // yukarıdaki kod parçası hepsine uyguladı.
+          //  modelBuilder.ApplyConfiguration(new ProductConfiguration()); // yukarıdaki kod parçası hepsine uyguladı.
             base.OnModelCreating(modelBuilder);
         }
 

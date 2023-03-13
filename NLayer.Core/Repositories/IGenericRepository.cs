@@ -10,7 +10,7 @@ namespace NLayer.Core.Repositories
     public interface IGenericRepository<T> where T : class
     {
         Task<T> GetByIdAsync(int id);
-        IQueryable<T> GetAll(Expression<Func<T, bool>> expression);
+        IQueryable<T> GetAll();
         IQueryable<T> Where(Expression<Func<T, bool>> expression); //product.Repository.Where(x=>x.id>5).OrderBy  direkt olarak vt'ye gitmez. .ToListAsync() eklendikten sonra işlem görür.
         //Performans açısından daha iyi.
         Task<bool> AnyAsync(Expression<Func<T, bool>> expression);
